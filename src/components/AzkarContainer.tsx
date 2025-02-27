@@ -1,15 +1,19 @@
 import { IoMoonOutline, IoSunnyOutline } from 'react-icons/io5'
 
-import './styles/azkar.css'
+import './styles/verse.css'
 
 export default function AzkarContainer({ children, isNight }: { children?: React.ReactNode, isNight: boolean }) {
 
   return (
     <section className="azkar-container">
       <header className={`azkar-header ${isNight ? 'azkar-night' : 'azkar-morning'}`}>
-        {isNight ? <IoMoonOutline /> : <IoSunnyOutline />}
+        <span className='azkar-title'>
+          {isNight ? <><IoMoonOutline />Evening Azkar</> : <><IoSunnyOutline />Morning Azkar</>}
+        </span>
       </header>
-      {children}
+      <main className='azkar-main'>
+        {children}
+      </main>
     </section>
   )
 }
