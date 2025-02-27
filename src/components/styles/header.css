@@ -1,0 +1,13 @@
+@import '../../styles/global.css';
+
+
+@layer utilities {
+  .header {
+    @apply w-screen
+  }
+
+  .header span {
+    @apply text-6xl
+  }
+
+}

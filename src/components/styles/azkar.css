@@ -1,0 +1,22 @@
+@import '../../styles/global.css';
+
+
+@layer utlities {
+  .azkar-container {
+    @apply rounded-sm w-5/6 h-80
+  }
+
+  .azkar-header {
+    @apply w-full
+  }
+
+  .azkar-night {
+    @apply bg-linear-to-r from-indigo-600 to-indigo-300
+  }
+
+  .azkar-morning {
+    @apply bg-linear-to-r from-green-300 to-green-700
+  }
+
+  .azkar-section {}
+}
