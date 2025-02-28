@@ -23,7 +23,7 @@ const PrayerTimes = () => {
         <span>Alexandria, Egypt</span>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mt-8 mx-auto justify-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-5xl lg:grid-cols-3 gap-6 mt-8 mx-auto justify-items-center">
         {prayerTimes.map((prayer, index) => (
           <PrayCard
             key={index}
