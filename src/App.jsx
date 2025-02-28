@@ -1,9 +1,13 @@
-import Navbaar from "./components/Navbar";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import PrayerTimes from "./components/PrayerTimes";
 
 function App() {
   return (
     <>
-      <Navbaar />
+      <Navbar />
+      <Hero />
+      <PrayerTimes />
     </>
   );
 }

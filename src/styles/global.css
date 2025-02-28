@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+@theme {
+  --color-background: #010101;
+  --color-foreground: #fefefe;
+  --color-primary-dark: #0d9488;
+  --color-primary-light: #10b981;
+  --color-secondary-dark: #6366f1;
+  --color-secondary-light: #9333ea;
+}
+
+@media (prefers-color-scheme: light) {
+  @theme {
+    --color-foreground: #010101;
+    --color-background: #fefefe;
+  }
+}
+
+@layer utilities {
+  .container {
+  }
+}

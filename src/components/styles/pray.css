@@ -14,7 +14,7 @@
   }
 
   .pray-title {
-    @apply font-[Noto_Sans] font-medium text-lg;
+    @apply font-medium text-lg;
   }
 
   .pray-description {
