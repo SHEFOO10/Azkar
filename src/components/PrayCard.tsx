@@ -1,0 +1,30 @@
+import './styles/pray.css'
+import { TbClock } from 'react-icons/tb'
+
+type Props = {
+  children: React.ReactNode,
+  time: string,
+  afternoon: boolean,
+  desc: string
+}
+
+export default function PrayCard({ children, time, desc, afternoon = true }: Props) {
+  return (
+    <section className='pray-card'>
+      <div className='pray-container'>
+        <div className='pray-details'>
+          <span className='pray-title'>
+            {children}
+          </span>
+          <span className='pray-description'>
+            {desc}
+          </span>
+        </div>
+        <TbClock />
+      </div>
+      <span className='pray-time'>
+        {time} {afternoon ? 'PM' : 'AM'}
+      </span>
+    </section>
+  )
+}
