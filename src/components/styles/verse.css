@@ -1,0 +1,82 @@
+@import '../../styles/global.css';
+
+
+@layer utlities {
+
+  /* Verse Container */
+  .verse-section {
+    @apply w-5/6 sm:w-3/5 lg:w-2/6 flex flex-col gap-4 mb-2 sm:mb-4 shadow-xl shadow-gray-300 rounded-sm py-4 px-4
+  }
+
+  .verse-text {
+    @apply w-full text-sm sm:text-lg
+  }
+
+  .verse-row {
+    @apply flex w-full items-center justify-between
+  }
+
+  .verse-item {
+    @apply flex items-center gap-2 sm:gap-4 text-xs text-slate-600
+  }
+
+  .verse-item.sura {
+    @apply text-primary-dark
+  }
+
+  .verse-item svg {
+    @apply size-4
+  }
+
+  /* Azkar Container */
+  .azkar-container {
+    @apply rounded-sm w-5/6 sm:w-3/5 md:w-4/5 lg:w-3/5 overflow-hidden shadow-sm shadow-gray-300
+  }
+
+  /* Azkar Container Header */
+
+  .azkar-header {
+    @apply w-full px-4 py-5
+  }
+
+  .azkar-header .azkar-title {
+    @apply flex items-center text-white font-semibold font-[Noto_Sans] text-base sm:text-xl gap-2 sm:gap-4
+  }
+
+  .azkar-title svg {
+    @apply size-6 text-white
+  }
+
+  /* Azkar Container header title background gradient */
+
+  .azkar-night {
+    @apply bg-linear-to-r from-secondary-dark to-secondary-light
+  }
+
+  .azkar-morning {
+    @apply bg-linear-to-r from-primary-light to-primary-dark
+  }
+
+  /* Azkar Container Main */
+
+  .azkar-main {
+    @apply py-2 px-4 flex flex-col
+  }
+
+  /* Azkar Section */
+  .azkar-container .verse-section {
+    @apply w-full shadow-none p-0 rounded-none
+  }
+
+  .verse-item.repeat {
+    @apply text-primary-dark font-medium
+  }
+
+  .verse-item.merit svg {
+    @apply text-yellow-600
+  }
+
+  .verse-hint {
+    @apply text-xs text-slate-500
+  }
+}
