@@ -2,7 +2,7 @@ import { IoMoonOutline, IoSunnyOutline } from 'react-icons/io5'
 
 import './styles/verse.css'
 
-export default function AzkarContainer({ children, isNight }: { children?: React.ReactNode, isNight: boolean }) {
+export default function AzkarContainer({ children, isNight }) {
 
   return (
     <section className="azkar-container">

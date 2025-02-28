@@ -3,14 +3,7 @@ import './styles/verse.css'
 import { MdOutlineStar, MdOutlineStarOutline } from 'react-icons/md'
 
 
-type Props = {
-  children: React.ReactNode,
-  repeat?: number,
-  stared?: boolean,
-  hint?: React.ReactNode
-}
-
-export default function VerseAzkar({ children, repeat = 1, stared = false, hint }: Props) {
+export default function VerseAzkar({ children, repeat = 1, stared = false, hint }) {
   return (
     <section className='verse-section'>
       {children}

@@ -1,14 +1,8 @@
 import './styles/pray.css'
 import { TbClock } from 'react-icons/tb'
 
-type Props = {
-  children: React.ReactNode,
-  time: string,
-  afternoon: boolean,
-  desc: string
-}
 
-export default function PrayCard({ children, time, desc, afternoon = true }: Props) {
+export default function PrayCard({ children, time, desc, afternoon = true }) {
   return (
     <section className='pray-card'>
       <div className='pray-container'>
