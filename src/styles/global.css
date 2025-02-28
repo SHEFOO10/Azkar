@@ -1,13 +1,12 @@
-@import 'tailwindcss';
-
+@import "tailwindcss";
 
 @theme {
   --color-background: #010101;
   --color-foreground: #fefefe;
-  --color-primary-dark: #0D9488;
-  --color-primary-light: #10B981;
-  --color-secondary-dark: #6366F1;
-  --color-secondary-light: #9333EA;
+  --color-primary-dark: #0d9488;
+  --color-primary-light: #10b981;
+  --color-secondary-dark: #6366f1;
+  --color-secondary-light: #9333ea;
 }
 
 @media (prefers-color-scheme: light) {
@@ -18,11 +17,6 @@
 }
 
 @layer utilities {
-  body {
-    @apply flex items-center justify-center bg-background min-h-screen w-screen
-  }
-
-  #root {
-    @apply w-full h-full flex flex-col items-center justify-center gap-4
+  .container {
   }
 }
