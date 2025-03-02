@@ -59,7 +59,7 @@ export { quranicDuas, propheticDuas };
 
 const Duas = () => {
   return (
-    <section className="py-16 px-5 bg-gray-50 container mx-auto">
+    <section className="py-16 px-5 bg-gray-50 container mx-auto rounded-3xl max-w-7xl">
       <h2 className="text-3xl font-bold text-gray-900 text-center flex justify-center items-center gap-2">
         <span className="text-[#059669] hidden md:block">
           <FaHands />
@@ -67,7 +67,7 @@ const Duas = () => {
         Quranic & Prophetic Duas
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 m-[50px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 m-[50px] max-w-5xl mx-auto">
         <div>
           <h3 className="text-xl font-semibold text-gray-900 flex items-center gap-2 mb-4">
             <span className="text-[#059669]">
@@ -75,7 +75,7 @@ const Duas = () => {
             </span>{" "}
             Quranic Duas
           </h3>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 items-center">
             {quranicDuas.map((dua) => (
               <DuaCard key={dua.id} {...dua} isQuran={true} />
             ))}
@@ -89,7 +89,7 @@ const Duas = () => {
             </span>{" "}
             Prophetic Duas
           </h3>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 items-center">
             {propheticDuas.map((dua) => (
               <DuaCard key={dua.id} {...dua} isQuran={false} />
             ))}
