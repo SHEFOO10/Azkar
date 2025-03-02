@@ -7,14 +7,14 @@ export default function DuaCard({
   isQuran = false,
 }) {
   return (
-    <div className="bg-white shadow-xl rounded-xl p-5 border border-gray-200 w-full max-w-md">
-      <p className="text-right text-lg font-semibold text-gray-900 leading-relaxed">
+    <div className="dark:bg-card rounded-xl p-5 w-full max-w-md not-dark:shadow-lg shadow-gray-300 py-2">
+      <p className="text-right text-lg font-semibold leading-relaxed mt-4">
         {arabic}
       </p>
 
-      <p className="text-gray-600 text-sm mt-2">{translation}</p>
+      <p className="text-gray-600 dark:text-gray-300 text-sm mt-2">{translation}</p>
 
-      <div className="flex items-center mt-4 text-[#059669] font-medium">
+      <div className="flex items-center mt-4 text-primary-dark dark:text-primary-light font-medium">
         {isQuran ? (
           <FaBookOpen className="mr-2" />
         ) : (

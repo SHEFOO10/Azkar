@@ -5,7 +5,7 @@
 
   /* Verse Container */
   .verse-section {
-    @apply w-5/6 sm:w-3/5 lg:w-2/6 flex flex-col gap-4 mb-2 sm:mb-4 shadow-xl shadow-gray-300 rounded-sm py-4 px-4
+    @apply w-5/6 sm:w-3/5 lg:w-2/6 flex flex-col gap-4 mb-2 sm:mb-4 shadow-lg shadow-gray-300 dark:shadow-gray-600 rounded-sm py-4 px-4
   }
 
   .verse-text {

@@ -3,12 +3,12 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const HeroBox = ({ head, body, btm }) => {
   return (
-    <div className="bg-white shadow-lg rounded-xl p-6 text-left flex flex-col justify-between">
-      <h3 className="text-xl font-semibold text-gray-900">{head}</h3>
-      <p className="text-gray-600 mt-2">{body}</p>
+    <div className="not-dark:shadow-lg shadow-gray-300 dark:bg-card rounded-xl p-6 text-left flex flex-col justify-between">
+      <h3 className="text-xl font-semibold">{head}</h3>
+      <p className="text-gray-600 dark:text-gray-300 mt-2">{body}</p>
       <a
         href="#"
-        className="text-[#059669] font-medium mt-3 flex items-center gap-1"
+        className="text-primary-dark dark:text-primary-light font-medium mt-3 flex items-center gap-1"
       >
         <span>{btm}</span>
         <span>
