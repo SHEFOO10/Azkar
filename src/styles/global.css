@@ -1,19 +1,17 @@
 @import 'tailwindcss';
-
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
+  --bg-color: #fefefe;
+  --fg-color: #010101;
+}
+
+.dark {
   --bg-color: #111827;
   --bg-color-dark: var(--bg-color);
   --bg-color-light: #1F2937;
   --bg-card: var(--bg-color-light);
   --fg-color: #fefefe;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --bg-color: #fefefe;
-    --fg-color: #010101;
-  }
 }
 
 @theme inline {
@@ -33,10 +31,10 @@
 
 @layer base {
   body {
-    @apply flex items-center justify-center bg-background text-foreground min-h-screen w-screen
+    @apply flex items-center justify-center min-h-screen w-screen
   }
 
   #root {
-    @apply w-full h-full
+    @apply w-full h-full bg-background text-foreground
   }
 }
