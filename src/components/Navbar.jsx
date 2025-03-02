@@ -7,7 +7,7 @@ const navs = ["Prayer Times", "Azkar", "Duas", "Prayer Guide", "Calendar"];
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between p-5 bg-white">
+    <nav className="flex items-center justify-around p-5 bg-white">
       <div className="text-[#059669] font-bold text-lg">IslamicPrayers</div>
       <ul className=" gap-6 flex text-gray-700">
         {navs.map((nav, index) => (

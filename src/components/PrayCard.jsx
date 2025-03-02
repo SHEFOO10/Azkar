@@ -1,5 +1,6 @@
-import "./styles/pray.css";
-import { TbClock } from "react-icons/tb";
+import './styles/pray.css'
+import { TbClock } from 'react-icons/tb'
+
 
 export default function PrayCard({ children, time, desc, afternoon = true }) {
   return (
@@ -11,9 +12,9 @@ export default function PrayCard({ children, time, desc, afternoon = true }) {
         </div>
         <TbClock />
       </div>
-      <span className="pray-time">
-        {time} {afternoon ? "PM" : "AM"}
+      <span className='pray-time'>
+        {time} {afternoon ? 'PM' : 'AM'}
       </span>
     </section>
-  );
+  )
 }

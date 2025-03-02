@@ -1,0 +1,60 @@
+@import '../../styles/global.css';
+
+
+@layer utilities {
+
+  /* Guide Section */
+  .guide-section {
+    @apply w-7/8 flex flex-col p-6 dark:bg-card shadow-sm shadow-gray-200 dark:shadow-gray-800 rounded-lg font-[Noto_Sans]
+  }
+
+  /* Guide Section header */
+  .guide-header {
+    @apply w-full flex items-center gap-4 mb-4
+  }
+
+  .guide-header svg {
+    @apply size-5 text-primary-dark dark:text-primary-light
+  }
+
+  /* Guide Section header title */
+  .guide-title {
+    @apply text-xl font-medium
+  }
+
+  /* Guide Section main */
+  .guide-main {
+    @apply flex flex-col gap-2
+  }
+
+  /* Guide Section main about */
+  .guide-about {
+    @apply text-sm text-gray-600 dark:text-gray-300 mb-4
+  }
+
+  /* Guide Tutorial */
+  .guide-tutorial {
+    @apply w-full sm:max-w-2/3 flex flex-col gap-4 bg-[#ECFDF5] dark:bg-transparent dark:border dark:border-primary-light rounded-lg p-4;
+
+    .keypoints {
+      @apply text-primary-dark dark:text-primary-light brightness-75 dark:brightness-120;
+
+      svg {
+        @apply size-[18px]
+      }
+    }
+  }
+
+  /* Guide Tutorial item */
+  .tutorial-item {
+    @apply flex items-center gap-2 relative text-primary-dark dark:brightness-125 text-sm font-medium;
+
+    svg {
+      @apply size-4
+    }
+  }
+
+  .tutorial-point {
+    @apply absolute size-1 rounded-4xl -left-[19px] dark:-left-[21px] bg-primary-dark dark:bg-primary-light brightness-125
+  }
+}
