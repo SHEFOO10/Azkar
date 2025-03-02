@@ -1,48 +1,46 @@
-@import 'tailwindcss';
-
+@import "tailwindcss";
 
 :root {
-    --bg-color: #111827;
-    --bg-color-dark: var(--bg-color-dark);
-    --bg-color-light: #1F2937;
-    --bg-card: var(--bg-color-light);
-    --fg-color: #fefefe;
+  --bg-color: #111827;
+  --bg-color-dark: var(--bg-color-dark);
+  --bg-color-light: #1f2937;
+  --bg-card: var(--bg-color-light);
+  --fg-color: #fefefe;
 }
 
 @media (prefers-color-scheme: light) {
-    :root {
-        --bg-color: #fefefe;
-        --fg-color: #010101;
-    }
+  :root {
+    --bg-color: #fefefe;
+    --fg-color: #010101;
+  }
 }
 
 @theme inline {
-    --color-background: var(--bg-color);
-    --color-card: var(--bg-card);
-    --color-foreground: var(--fg-color);
-    --color-gradient-light: var(--bg-color-light);
-    --color-gradient-dark: var(--bg-color-dark);
+  --color-background: var(--bg-color);
+  --color-card: var(--bg-card);
+  --color-foreground: var(--fg-color);
+  --color-gradient-light: var(--bg-color-light);
+  --color-gradient-dark: var(--bg-color-dark);
 }
 
 @theme {
-    --color-primary-dark: #0D9488;
-    --color-primary-light: #10B981;
-    --color-secondary-dark: #6366F1;
-    --color-secondary-light: #9333EA;
+  --color-primary-dark: #0d9488;
+  --color-primary-light: #10b981;
+  --color-secondary-dark: #6366f1;
+  --color-secondary-light: #9333ea;
 }
 
 @layer base {
-    body {
-        @apply flex items-center justify-center bg-background text-foreground min-h-screen w-screen dark:bg-linear-to-b dark:from-gradient-dark dark:to-gradient-light
-    }
+  body {
+    @apply flex items-center justify-center bg-background text-foreground min-h-screen w-screen dark:bg-linear-to-b dark:from-gradient-dark dark:to-gradient-light;
+  }
 
-    #root {
-        @apply w-full h-full
-    }
+  #root {
+    @apply w-full h-full;
+  }
 }
 
-
 @layer utilities {
-    .container {
-    }
+  .container {
+  }
 }

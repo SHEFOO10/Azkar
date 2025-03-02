@@ -1,0 +1,77 @@
+import React from "react";
+import DailyAzkarSection from "./DailyAzkarSection";
+import { IoSunnyOutline } from "react-icons/io5";
+import { MdOutlineNightlight } from "react-icons/md";
+
+const morning_azkar = [
+  {
+    arabic:
+      "اللَّهُمَّ بِكَ أَصْبَحْنَا، وَبِكَ أَمْسَيْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ النُّشُورُ.",
+    translation:
+      "O Allah, by You we enter the morning and by You we enter the evening, by You we live and by You we die, and to You is the resurrection.",
+    repeat: 1,
+    merit: "A comprehensive morning remembrance",
+  },
+  {
+    arabic:
+      "أَصْبَحْنَا عَلَى فِطْرَةِ الإِسْلَامِ، وَعَلَى كَلِمَةِ الإِخْلاَصِ، وَعَلَى دِينِ نَبِيِّنَا مُحَمَّدٍ.",
+    translation:
+      "We have entered the morning upon the natural way of Islam, the statement of sincerity, and the religion of our Prophet Muhammad (ﷺ).",
+    repeat: 1,
+    merit: "Affirming faith in the morning",
+  },
+  {
+    arabic:
+      "اللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَ هَذَا الْيَوْمِ: فَتْحَهُ، وَنَصْرَهُ، وَنُورَهُ، وَبَرَكَتَهُ، وَهُدَاهُ.",
+    translation:
+      "O Allah, I ask You for the good of this day: its victory, its light, its blessing, and its guidance.",
+    repeat: 1,
+    merit: "Seeking blessings for the day",
+  },
+];
+
+const evening_azkar = [
+  {
+    arabic:
+      "اللَّهُمَّ بِكَ أَمْسَيْنَا، وَبِكَ أَصْبَحْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ الْمَصِيرُ.",
+    translation:
+      "O Allah, by You we enter the evening and by You we enter the morning, by You we live and by You we die, and to You is the final destination.",
+    repeat: 1,
+    merit: "A comprehensive evening remembrance",
+  },
+  {
+    arabic: "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ.",
+    translation:
+      "I seek refuge in Allah’s perfect words from the evil of what He has created.",
+    repeat: 3,
+    merit: "Protection from harms during the night",
+  },
+];
+
+const DailyAzkar = () => {
+  return (
+    <div className="bg-gray-100 min-h-screen py-10">
+      <h1 className="text-3xl text-center font-semibold text-gray-900">
+        Daily Azkar
+      </h1>
+      <div className="flex flex-wrap justify-center gap-6 p-6">
+        <DailyAzkarSection
+          title="Morning Azkar"
+          icon={<IoSunnyOutline />}
+          colorOne="#10B981"
+          colorTwo="#0D9488"
+          azkar={morning_azkar}
+        />
+        <DailyAzkarSection
+          title="Evening Azkar"
+          icon={<MdOutlineNightlight />}
+          colorOne="#6366F1"
+          colorTwo="#9333EA"
+          azkar={evening_azkar}
+        />
+      </div>
+    </div>
+  );
+};
+
+export default DailyAzkar;
