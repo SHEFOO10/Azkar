@@ -1,32 +1,31 @@
-@import '../../styles/global.css';
-
+@import "../../styles/global.css";
 
 @layer utilities {
   .pray-card {
-    @apply w-64 lg:w-72 aspect-[4/2] lg:aspect-[5/3] rounded-lg shadow-xl shadow-gray-400 flex flex-col justify-between p-6 gap-4
+    @apply w-64 lg:w-72 aspect-[4/2] lg:aspect-[5/3] rounded-lg shadow-xl shadow-gray-400 flex flex-col justify-between p-6 gap-4;
   }
 
   .pray-container {
-    @apply flex w-full items-center justify-between
+    @apply flex w-full items-center justify-between;
   }
 
   .pray-details {
-    @apply flex flex-col justify-evenly gap-2
+    @apply flex flex-col justify-evenly gap-2;
   }
 
   .pray-title {
-    @apply font-[Noto_Sans] font-medium text-lg
+    @apply font-[Noto_Sans] font-medium text-lg;
   }
 
   .pray-description {
-    @apply text-sm text-gray-500
+    @apply text-sm text-gray-500;
   }
 
   .pray-container svg {
-    @apply size-7 text-primary-dark
+    @apply size-7 text-primary-dark;
   }
 
   .pray-time {
-    @apply text-2xl font-bold text-primary-dark
+    @apply text-2xl font-bold text-primary-dark;
   }
 }
