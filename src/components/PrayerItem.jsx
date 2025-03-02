@@ -7,7 +7,6 @@ export default function PrayerItem({
 }) {
   return (
     <li className='tutorial-item'>
-      <div className='tutorial-point'></div>
       <FaRegCircleCheck />
       {children}
     </li>
