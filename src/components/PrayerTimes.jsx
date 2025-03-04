@@ -90,8 +90,9 @@ const PrayerTimes = () => {
   }, [selectedGov]);
 
   return (
-    <section className="text-center py-16 px-5 bg-white container mx-auto">
-      <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
+    <div>
+    <section className="xl:w-2/3 lg:backdrop-blur-lg rounded-xl text-center py-16 px-8 block mx-auto" >
+      <h2 className="text-2xl md:text-3xl font-bold mb-3">
         Prayer Times
       </h2>
       <div className="my-6">
@@ -112,8 +113,8 @@ const PrayerTimes = () => {
         <Loading />
       ) : (
         <>
-          <div className="flex justify-center items-center text-gray-600 mt-2">
-            <CiLocationOn className="mr-2 text-black font-bold" />
+          <div className="flex justify-center items-center dark:text-gray-400 mt-2">
+            <CiLocationOn className="mr-2 not-dark:text-black font-bold" />
             <span>{selectedGov}, Egypt</span>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-5xl lg:grid-cols-3 gap-6 mt-8 mx-auto justify-items-center">
@@ -131,6 +132,7 @@ const PrayerTimes = () => {
         </>
       )}
     </section>
+    </div>
   );
 };
 

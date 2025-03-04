@@ -1,6 +1,7 @@
 import DuaCard from "./DuaCard";
 import { FaBook, FaHands } from "react-icons/fa";
-import { CiHeart } from "react-icons/ci";
+import { FaRegHeart } from "react-icons/fa6";
+import Verse from "./Verse";
 
 const quranicDuas = [
   {
@@ -59,9 +60,9 @@ export { quranicDuas, propheticDuas };
 
 const Duas = () => {
   return (
-    <section className="py-16 px-5 bg-gray-50 container mx-auto rounded-3xl max-w-7xl">
-      <h2 className="text-3xl font-bold text-gray-900 text-center flex justify-center items-center gap-2">
-        <span className="text-[#059669] hidden md:block">
+    <section className="py-16 px-5 container mx-auto max-w-7xl">
+      <h2 className="text-3xl font-bold text-center flex justify-center items-center gap-2">
+        <span className="text-primary-dark dark:text-primary-light hidden md:block">
           <FaHands />
         </span>
         Quranic & Prophetic Duas
@@ -69,13 +70,13 @@ const Duas = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 m-[50px] max-w-5xl mx-auto">
         <div>
-          <h3 className="text-xl font-semibold text-gray-900 flex items-center gap-2 mb-4">
-            <span className="text-[#059669]">
+          <h3 className="text-xl font-semibold flex items-center gap-2 mb-4 sm:mb-6 md:mb-8">
+            <span className="text-primary-dark dark:text-primary-light">
               <FaBook />
             </span>{" "}
             Quranic Duas
           </h3>
-          <div className="flex flex-col gap-4 items-center">
+          <div className="flex flex-col gap-6 items-center">
             {quranicDuas.map((dua) => (
               <DuaCard key={dua.id} {...dua} isQuran={true} />
             ))}
@@ -83,13 +84,13 @@ const Duas = () => {
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold text-gray-900 flex items-center gap-2 mb-4">
-            <span className="text-[#059669]">
-              <CiHeart />
+          <h3 className="text-xl font-semibold flex items-center gap-2 mb-4 sm:mb-6 md:mb-8">
+            <span className="text-primary-dark dark:text-primary-light">
+              <FaRegHeart />
             </span>{" "}
             Prophetic Duas
           </h3>
-          <div className="flex flex-col gap-4 items-center">
+          <div className="flex flex-col gap-6 items-center">
             {propheticDuas.map((dua) => (
               <DuaCard key={dua.id} {...dua} isQuran={false} />
             ))}

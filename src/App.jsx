@@ -9,14 +9,17 @@ import IslamicCalendar from "./components/IslamicCalendar.jsx";
 
 function App() {
   return (
-    <>
+    <div style={{
+      background: "url('/pattern.jpg') var(--bg-color)",
+      backgroundBlendMode: "multiply",
+      }}>
       <Navbar />
       <Hero />
       <PrayerTimes />
       <DailyAzkar />
       <Duas />
       <IslamicCalendar />
-    </>
+    </div>
   );
 }
 

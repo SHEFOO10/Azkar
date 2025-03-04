@@ -3,7 +3,7 @@ import { FaRegStar } from "react-icons/fa";
 
 const DailyAzkarSection = ({ title, icon, colorOne, colorTwo, azkar }) => {
   return (
-    <div className="w-full max-w-md bg-white shadow-lg rounded-2xl overflow-hidden">
+    <div className="w-full max-w-md dark:bg-gray-800 shadow-lg rounded-2xl overflow-hidden">
       <div
         className="flex items-center px-4 py-3 text-white"
         style={{
@@ -16,11 +16,11 @@ const DailyAzkarSection = ({ title, icon, colorOne, colorTwo, azkar }) => {
 
       <div className="p-4 space-y-4">
         {azkar.map((item, index) => (
-          <div key={index} className="bg-gray-50 p-4 rounded-xl shadow-sm">
-            <h1 className="text-right text-lg font-semibold text-gray-800 mb-2">
+          <div key={index} className="dark:bg-gray-700 dark:text-white p-4 rounded-xl shadow-sm">
+            <h1 className="text-right text-lg font-semibold mb-2">
               {item.arabic}
             </h1>
-            <p className="text-sm text-gray-600 mb-3">{item.translation}</p>
+            <p className="text-sm dark:text-gray-400 mb-3">{item.translation}</p>
 
             <div className="flex justify-between items-center text-sm font-medium">
               <div className="text-[#059669] flex items-center gap-1">

@@ -50,7 +50,7 @@ const evening_azkar = [
 
 const DailyAzkar = () => {
   return (
-    <div className="bg-gray-100 min-h-screen py-10">
+    <div className="min-h-screen py-10">
       <h1 className="text-3xl text-center font-semibold text-gray-900">
         Daily Azkar
       </h1>
