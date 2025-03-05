@@ -1,0 +1,68 @@
+{
+  "translation": {
+
+    "islamic_prayers": "IslamicPrayers",
+
+    "azkar": "Azkar",
+    "duas": "Duas",
+    "prayer_guide": "Prayer Guide",
+    "calendar": "Calendar",
+
+
+    "hero_title": "Begin Your Spiritual Journey",
+    "hero_description": "Discover daily prayers, Azkar, and spiritual guidance from the Quran and Sunnah",
+
+    "get_started": "Get Started",
+    "prayer_times": "Prayer Times",
+
+    "daily_prayers_card_title": "Daily Prayers",
+    "daily_prayers_card_description": "Find prayer times and guidance for your location",
+
+    "morning_azkar_card_title": "Morning Azkar",
+    "morning_azkar_card_description": "Start your day with blessed morning remembrance",
+
+    "evening_azkar_card_title": "Evening Azkar",
+    "evening_azkar_card_description": "End your day with peaceful evening remembrance",
+
+    "read_more": "Read More",
+    "view_times": "View Times",
+
+    
+    "fajr_pray": "Fajr",
+    "sunrise_pray": "Sunrise",
+    "dhuhr_pray": "Dhuhr",
+    "asr_pray": "Asr",
+    "maghrib_pray": "Maghrib",
+    "isha_pray": "Isha",
+
+
+
+
+    "islamic_calendar": "Islamic Calendar",
+    "islamic_calendar_description": "Important Islamic dates and events",
+
+    "beginning_of_ramadan": "Beginning of Ramadan",
+    "beginning_of_ramadan_description": "The holy month of fasting begins",
+    "beginning_of_ramadan_event": "The blessed month of fasting, increased worship, and spiritual reflection",
+
+    "laylat_al_qadr": "Laylat al-Qadr",
+    "laylat_al_qadr_description": "The Night of Power",
+    "laylat_al_qadr_event": "The night better than a thousand months, when the Quran was revealed",
+
+    "eid_al_fitr": "Eid al-Fitr",
+    "eid_al_fitr_description": "Festival of Breaking the Fast",
+    "eid_al_fitr_event": "Celebration marking the end of Ramadan and fasting",
+
+    "eid_al-adha": "Eid al-Adha",
+    "eid_al-adha_description": "Festival of Sacrifice",
+    "eid_al-adha_event": "Commemorating Prophet Ibrahim’s willingness to sacrifice his son",
+
+    "islamic_new_year": "Islamic New Year",
+    "islamic_new_year_description": "Beginning of the Hijri Calendar",
+    "islamic_new_year_event": "Marks the migration of Prophet Muhammad ﷺ from Makkah to Madinah",
+
+    "mawlid_al_nabi": "Mawlid al-Nabi",
+    "mawlid_al_nabi_description": "Birth of Prophet Muhammad (Peace been upon him)",
+    "mawlid_al_nabi_event": "Commemorating the birth of the final Prophet (Peace been upon him)"
+  }
+}

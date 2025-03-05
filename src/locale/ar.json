@@ -1,0 +1,69 @@
+{
+  "translation": {
+
+    "islamic_prayers": "IslamicPrayers",
+
+    "azkar": "أذكار",
+    "duas": "أدعية",
+    "prayer_guide": "دليل المصلي",
+    "calendar": "التقويم",
+
+
+
+    "hero_title": "ابدأ رحلتك الروحية",
+    "hero_description": "اكتشف الأدعية اليومية والأذكار والتوجيهات الروحانية من القرآن والسنة النبوية",
+
+    "get_started": "ابدأ الآن",
+    "prayer_times": "أوقات الصلاة",
+
+    "daily_prayers_card_title": "الصلوات اليومية",
+    "daily_prayers_card_description": "ابحث عن أوقات الصلاة والإرشادات الخاصة بموقعك",
+
+    "morning_azkar_card_title": "أذكار الصباح",
+    "morning_azkar_card_description": "ابدأ يومك بذكر الصباح المبارك",
+
+    "evening_azkar_card_title": "أذكار المساء",
+    "evening_azkar_card_description": "اختتم يومك بالذكرى المسائية الهادئة",
+
+    "read_more": "قراءة المزيد",
+    "view_times": "عرض الأوقات",
+
+
+
+    "fajr_pray": "صلاة الفجر",
+    "sunrise_pray": "صلاة شروق الشمس",
+    "dhuhr_pray": "صلاة الظهر",
+    "asr_pray": "صلاة العصر",
+    "maghrib_pray": "صلاة المغرب",
+    "isha_pray": "صلاة العشاء",
+
+
+
+    "islamic_calender": "التقويم الإسلامي",
+    "islamic_calender_description": "أهم التواريخ والمناسبات الإسلامية",
+
+    "beginning_of_ramadan": "بداية شهر رمضان المبارك",
+    "beginning_of_ramadan_description": "بدء شهر الصوم المبارك",
+    "beginning_of_ramadan_event": "الشهر المبارك شهر الصيام وزيادة العبادة والتأمل الروحي",
+
+    "laylat_al_qadr": "ليلة القدر",
+    "laylat_al_qadr_description": "",
+    "laylat_al_qadr_event": "",
+
+    "eid_al_fitr": "عيد الفطر المبارك",
+    "eid_al_fitr_description": "عيد افطار صيام شهر رمضان",
+    "eid_al_fitr_event": "الاحتفال بمناسبة انتهاء شهر رمضان والصيام",
+
+    "eid_al-adha": "عيد الأضحى المبارك",
+    "eid_al-adha_description": "",
+    "eid_al-adha_event": "إحياءً لذكرى استعداد النبي إبراهيم عليه السلام للتضحية بابنه",
+
+    "islamic_new_year": "رأس السنة الهجرية",
+    "islamic_new_year_description": "بداية التقويم الهجري",
+    "islamic_new_year_event": "ذكرى هجرة النبي محمد ﷺ من مكة المكرمة إلى المدينة المنورة",
+
+    "mawlid_al_nabi": "المولد النبوي الشريف",
+    "mawlid_al_nabi_description": "مولد النبي محمد ﷺ",
+    "mawlid_al_nabi_event": "إحياءً لذكرى مولد النبي الخاتم ﷺ"
+  }
+}
