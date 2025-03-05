@@ -13,26 +13,14 @@ function App() {
   return (
     <div style={{
       background: "url('/pattern.jpg') var(--bg-color)",
-      backgroundBlendMode: "overlay",
+      backgroundBlendMode: "multiply",
     }}>
       <Navbar />
-      <PrayerGuideContainer>
-        <PrayerGuide title={'title'} about={'about'}>
-          <PrayerItem>
-            Hello 1
-          </PrayerItem>
-          <PrayerItem>
-            Hello 2
-          </PrayerItem>
-          <PrayerItem>
-            Hello 3
-          </PrayerItem>
-        </PrayerGuide>
-      </PrayerGuideContainer>
       <Hero />
       <PrayerTimes />
       <DailyAzkar />
       <Duas />
+      <PrayerGuide />
       <IslamicCalendar />
     </div>
   );

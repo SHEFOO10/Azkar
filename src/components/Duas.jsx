@@ -60,7 +60,7 @@ export { quranicDuas, propheticDuas };
 
 const Duas = () => {
   return (
-    <section className="py-16 px-5 container mx-auto max-w-7xl">
+    <section className="py-16 px-5 container mx-auto max-w-7xl" id='duas'>
       <h2 className="text-3xl font-bold text-center flex justify-center items-center gap-2">
         <span className="text-primary-dark dark:text-primary-light hidden md:block">
           <FaHands />

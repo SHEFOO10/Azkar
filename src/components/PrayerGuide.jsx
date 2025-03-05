@@ -4,27 +4,23 @@ import PrayerItem from "./PrayerItem";
 
 const prayerGuides = [
   {
-    title: "Purification (Wudu)",
+    title: "1. Purification (Wudu)",
     about: "Before you pray, it’s important to be in a state of physical and spiritual purity. This means doing wudu, or ablution. It involves washing your hands, mouth, nose, face, arms, head, and feet in a specific order. It’s a refreshing way to prepare yourself for prayer.",
-    steps: []
   },
   {
-    title: "Intention (Niyyah)",
+    title: "2. Intention (Niyyah)",
     about: "Think about your intention in your heart. You don’t need to say it out loud, but remind yourself that you are praying for Allah’s sake. This simple act of setting your intention can enhance your focus during the prayer.",
-    steps: []
   },
   {
-    title: "Choose a Clean Space",
+    title: "3. Choose a Clean Space",
     about: "Find a clean and quiet place to pray where you won’t be distracted. This could be a designated prayer area in your home, a quiet room, or even a corner of your office.",
-    steps: []
   },
   {
-    title: "Dress Modestly",
+    title: "4. Dress Modestly",
     about: "Wear clean and modest clothing. For men, this means covering from the navel to the knees. Women should wear loose-fitting clothes that cover their bodies.",
-    steps: []
   },
   {
-    title: "Step-by-Step Guide to Performing Solat",
+    title: "5. Step-by-Step Guide to Performing Solat",
     about: "",
     steps: [
       "Stand Facing the Qibla.",
@@ -41,7 +37,7 @@ const prayerGuides = [
     ]
   },
   {
-    title: "1. Stand Facing the Qibla",
+    title: "5.1. Stand Facing the Qibla",
     about: "",
     steps: [
       "Use compass or Qibla Finder Web App.",
@@ -49,16 +45,21 @@ const prayerGuides = [
     ]
   },
   {
-    title: "2. Begin the Prayer with Takbir al-Ihram",
+    title: "5.2. Begin the Prayer with Takbir al-Ihram",
     about: "",
     steps: [
       "Raise your hands to your ears (or shoulders).",
-      "Say the takbeer \"Allahu Akbar\"",
-      "-- Meaning: (Allah is the Greatest)"
+      {
+        step:
+          "Say the takbeer \"Allahu Akbar\"",
+        description: [
+          "Meaning: (Allah is the Greatest)"
+        ]
+      }
     ]
   },
   {
-    title: "3. Recite Surah Al-Fatiha",
+    title: "5.3. Recite Surah Al-Fatiha",
     about: "",
     steps: [
       "When in a standing position.",
@@ -66,43 +67,58 @@ const prayerGuides = [
     ]
   },
   {
-    title: "4. Recite Another Surah or Verses from the Quran",
+    title: "5.4. Recite Another Surah or Verses from the Quran",
     about: "",
     steps: [
       "Recite another Surah or a few verses from the Quran."
     ]
   },
   {
-    title: "5. Perform the Ruku (Bowing)",
+    title: "5.5. Perform the Ruku (Bowing)",
     about: "",
     steps: [
       "Bend at the waist with your hands on your knees.",
       "Keeping your back straight.",
-      "While in this position, say this 3 times \"Subhana Rabbiyal Adheemi Wa Bihamdihi\"",
-      "-- Meaning: (Glory is to my Lord, the Most Great)"
+      {
+        step:
+          "While in this position, say this 3 times \"Subhana Rabbiyal Adheemi Wa Bihamdihi\"",
+        description: [
+          "Meaning: (Glory is to my Lord, the Most Great)"
+        ]
+      }
     ]
   },
   {
-    title: "6. Stand Up Straight Again",
+    title: "5.6. Stand Up Straight Again",
     about: "",
     steps: [
       "Return to a standing position.",
-      "Then say \"Sami’ Allahu liman Hamidah, Rabbana lakal hamd\"",
-      "-- Meaning: (Allah hears the one who praises Him; Our Lord, to You belongs all praise)"
+      {
+        step:
+          "Then say \"Sami’ Allahu liman Hamidah, Rabbana lakal hamd\"",
+        description: [
+          "Meaning: (Allah hears the one who praises Him; Our Lord, to You belongs all praise)"
+        ]
+      }
     ]
   },
   {
-    title: "7. Perform the Sujud (Prostration)",
+    title: "5.7. Perform the Sujud (Prostration)",
     about: "",
     steps: [
       "Go down into prostration.",
-      'Touching your forehead, nose, palms, knees, and toes to the floor',
-      '-- In this position, say "Subhana Rabbiyal A’la Wa Bihamdihi" 3 times',
-      "-- Meaning (Glory is to my Lord, the Most High)"
+      {
+        step:
+          'Touching your forehead, nose, palms, knees, and toes to the floor',
+        description: [
+          'In this position, say "Subhana Rabbiyal A’la Wa Bihamdihi" 3 times',
+          "Meaning (Glory is to my Lord, the Most High)"
+        ]
+      }
     ]
   },
   {
-    title: "8. Sit Between the Two Sujuds",
+    title: "5.8. Sit Between the Two Sujuds",
     about: "",
     steps: [
       {
@@ -116,7 +132,7 @@ const prayerGuides = [
     ]
   },
   {
-    title: "9. Perform the Second Sujud",
+    title: "5.9. Perform the Second Sujud",
     about: "",
     steps: [
       "Go back down into prostration.",
@@ -129,7 +145,7 @@ const prayerGuides = [
     ]
   },
   {
-    title: "10. Complete the Rak’ah",
+    title: "5.10. Complete the Rak’ah",
     about: "",
     steps: [
       "Rise again to a standing position to complete the Rak’ah",
@@ -138,7 +154,7 @@ const prayerGuides = [
     ]
   },
   {
-    title: "11. Concluding the Prayer",
+    title: "5.11. Concluding the Prayer",
     about: "",
     steps: [
       "The required number of Rak’ahs.",
@@ -151,7 +167,7 @@ const prayerGuides = [
       },
       {
         step:
-          "To conclude your prayer, turn your head to the right and then to the left, saying this in each direction",
+          "Turn your head to the right and then to the left, saying this in each direction",
         description: [
           "\"As-salamu ‘alaykum wa rahmatullah\"",
           "Meaning: (Peace and mercy of Allah be upon you)"
@@ -165,12 +181,24 @@ const prayerGuides = [
 
 export default function PrayerGuide() {
   return (
-    <PrayerGuideContainer>
-      <PrayerGuideSection>
-        <PrayerItem>
+    <section id='prayer-guide'>
+      <h2 className="text-2xl md:text-3xl font-bold mb-4">
+        Prayer Guide
+      </h2>
+      <PrayerGuideContainer>
+        {prayerGuides.map(
+          (e, i) =>
+            <PrayerGuideSection key={i} title={e.title} about={e.about === '' && e.about}>
+              {e.steps && e.steps.map(
+                (a, i) => !a ? undefined : typeof a === 'string'
+                  ? <PrayerItem>{a}</PrayerItem>
+                  : <PrayerItem step={a} />
 
-        </PrayerItem>
-      </PrayerGuideSection>
-    </PrayerGuideContainer>
+
+              )}
+            </PrayerGuideSection>
+        )}
+      </PrayerGuideContainer>
+    </section>
   )
 }

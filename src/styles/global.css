@@ -15,11 +15,11 @@
 }
 
 @theme inline {
-    --color-background: var(--bg-color);
-    --color-card: var(--bg-card);
-    --color-foreground: var(--fg-color);
-    --color-gradient-light: var(--bg-color-light);
-    --color-gradient-dark: var(--bg-color-dark);
+  --color-background: var(--bg-color);
+  --color-card: var(--bg-card);
+  --color-foreground: var(--fg-color);
+  --color-gradient-light: var(--bg-color-light);
+  --color-gradient-dark: var(--bg-color-dark);
 }
 
 @theme {
@@ -30,17 +30,20 @@
 }
 
 @layer base {
-    body {
-      @apply flex items-center justify-center bg-background text-foreground min-h-screen w-screen dark:bg-linear-to-b dark:from-gradient-dark dark:to-gradient-light;
-    }
+  body {
+    @apply flex items-center justify-center bg-background text-foreground min-h-screen w-screen dark:bg-linear-to-b dark:from-gradient-dark dark:to-gradient-light;
+  }
 
-    #root {
-      @apply w-full h-full bg-background text-foreground;
+  html {
+    @apply scroll-smooth
+  }
+
+  #root {
+    @apply w-full h-full bg-background text-foreground;
   }
 }
 
 
 @layer utilities {
-    .container {
-    }
+  .container {}
 }

@@ -50,8 +50,8 @@ const evening_azkar = [
 
 const DailyAzkar = () => {
   return (
-    <div className="min-h-screen py-10">
-      <h1 className="text-3xl text-center font-semibold text-gray-900">
+    <div className="min-h-screen py-10" id='daily-azkar'>
+      <h1 className="text-3xl text-center font-semibold ">
         Daily Azkar
       </h1>
       <div className="flex flex-wrap justify-center gap-6 p-6">

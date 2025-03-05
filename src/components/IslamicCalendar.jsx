@@ -45,7 +45,7 @@ const Calendar = [
 
 const IslamicCalendar = () => {
   return (
-    <div className="min-h-screen py-10 flex flex-col items-center">
+    <div className="min-h-screen py-10 flex flex-col items-center" id='islamic-calendar'>
       <h1 className="text-3xl font-semibold not-dark:text-gray-900">Islamic Calendar</h1>
       <p className="text-gray-600 text-lg mb-6">
         Important Islamic dates and events

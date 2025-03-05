@@ -90,48 +90,48 @@ const PrayerTimes = () => {
   }, [selectedGov]);
 
   return (
-    <div>
-    <section className="xl:w-2/3 lg:backdrop-blur-lg rounded-xl text-center py-16 px-8 block mx-auto" >
-      <h2 className="text-2xl md:text-3xl font-bold mb-3">
-        Prayer Times
-      </h2>
-      <div className="my-6">
-        <select
-          id="govSelect"
-          value={selectedGov}
-          onChange={(e) => setSelectedGov(e.target.value)}
-          className="p-2 border border-gray-300 rounded-md bg-[#0EA584]"
-        >
-          {governorates.map((gov, index) => (
-            <option key={index} value={gov.en}>
-              {gov.ar} - {gov.en}
-            </option>
-          ))}
-        </select>
-      </div>
-      {loading ? (
-        <Loading />
-      ) : (
-        <>
-          <div className="flex justify-center items-center dark:text-gray-400 mt-2">
-            <CiLocationOn className="mr-2 not-dark:text-black font-bold" />
-            <span>{selectedGov}, Egypt</span>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-5xl lg:grid-cols-3 gap-6 mt-8 mx-auto justify-items-center">
-            {pray.map((prayer, index) => (
-              <PrayCard
-                key={index}
-                time={prayer.time}
-                desc={prayer.desc}
-                afternoon={prayer.afternoon}
-              >
-                {prayer.name}
-              </PrayCard>
+    <div id='prayer-times'>
+      <section className="xl:w-2/3 lg:backdrop-blur-lg rounded-xl text-center py-16 px-8 block mx-auto" >
+        <h2 className="text-2xl md:text-3xl font-bold mb-3">
+          Prayer Times
+        </h2>
+        <div className="my-6">
+          <select
+            id="govSelect"
+            value={selectedGov}
+            onChange={(e) => setSelectedGov(e.target.value)}
+            className="p-2 border border-gray-300 rounded-md bg-[#0EA584]"
+          >
+            {governorates.map((gov, index) => (
+              <option key={index} value={gov.en}>
+                {gov.ar} - {gov.en}
+              </option>
             ))}
-          </div>
-        </>
-      )}
-    </section>
+          </select>
+        </div>
+        {loading ? (
+          <Loading />
+        ) : (
+          <>
+            <div className="flex justify-center items-center dark:text-gray-400 mt-2">
+              <CiLocationOn className="mr-2 not-dark:text-black font-bold" />
+              <span>{selectedGov}, Egypt</span>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-5xl lg:grid-cols-3 gap-6 mt-8 mx-auto justify-items-center">
+              {pray.map((prayer, index) => (
+                <PrayCard
+                  key={index}
+                  time={prayer.time}
+                  desc={prayer.desc}
+                  afternoon={prayer.afternoon}
+                >
+                  {prayer.name}
+                </PrayCard>
+              ))}
+            </div>
+          </>
+        )}
+      </section>
     </div>
   );
 };
