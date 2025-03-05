@@ -3,9 +3,14 @@
 
 @layer utilities {
 
+  /* Guide Container */
+  .guide-container {
+    @apply w-full flex flex-col justify-center items-center
+  }
+
   /* Guide Section */
   .guide-section {
-    @apply w-7/8 flex flex-col p-6 dark:bg-card shadow-sm shadow-gray-200 dark:shadow-gray-800 rounded-lg font-[Noto_Sans]
+    @apply w-7/8 flex flex-col p-6 bg-stone-50 dark:bg-card shadow-sm shadow-gray-200 dark:shadow-gray-800 rounded-lg font-[Noto_Sans]
   }
 
   /* Guide Section header */

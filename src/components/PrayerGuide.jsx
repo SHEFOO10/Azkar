@@ -8,7 +8,6 @@ export default function PrayerGuide({
   about,
   children
 }) {
-
   return (
     <section className='guide-section'>
       <header className='guide-header'>
