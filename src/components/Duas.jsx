@@ -81,7 +81,7 @@ const Duas = () => {
   const isArabic = i18n.language === 'ar' ? 'rtl' : 'ltr'
   const content = t('duas', { returnObjects: true })
   return (
-    <section className="py-16 px-5 container mx-auto max-w-7xl" dir={isArabic}>
+    <section className="py-16 px-5 container mx-auto max-w-7xl" id='duas' dir={isArabic}>
       <h2 className="text-3xl font-bold text-center flex justify-center items-center gap-2">
         <span className="text-primary-dark dark:text-primary-light hidden md:block">
           <FaHands />

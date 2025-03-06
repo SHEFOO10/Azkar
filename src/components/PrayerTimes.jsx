@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 
 const PrayerTimes = () => {
   const { t, i18n } = useTranslation()
-  t.lang
+  const isArabic = i18n.language === 'ar'
   const governorates = t('governorates', { returnObjects: true })
   const [pray, setPray] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -88,7 +88,7 @@ const PrayerTimes = () => {
 
   return (
     <div>
-      <section className="xl:w-2/3 lg:backdrop-blur-lg rounded-xl text-center py-16 px-8 block mx-auto" >
+      <section className="xl:w-2/3 lg:backdrop-blur-lg rounded-xl text-center py-16 px-8 block mx-auto" dir={isArabic ? "rtl" : "ltr"} id='prayer-times'>
         <h2 className="text-2xl md:text-3xl font-bold mb-3">
           {t('navbar.prayer_times')}
         </h2>
@@ -97,7 +97,7 @@ const PrayerTimes = () => {
             id="govSelect"
             value={selectedGov.name}
             onChange={(e) => setSelectedGov(governorates.find(a => a.name === e.target.value))}
-            className="p-2 border border-gray-300 rounded-md bg-primary-dark dark:bg-primary-light"
+            className="p-2 border border-gray-300 rounded-md bg-primary-dark dark:bg-primary-light text-white"
           >
             {governorates.map(({ name }, index) => (
               <option key={index} value={name}>
@@ -110,7 +110,7 @@ const PrayerTimes = () => {
           <Loading />
         ) : (
           <>
-            <div className="flex justify-center items-center dark:text-gray-300 mt-2">
+            <div className="flex justify-center items-center dark:text-gray-300 mt-2 gap-2">
               <CiLocationOn className="mr-2 not-dark:text-black font-bold" />
               <span dir={i18n.language === 'ar' ? "rtl" : 'ltr'}>
                 {

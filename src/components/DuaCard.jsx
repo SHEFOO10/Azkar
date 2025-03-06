@@ -10,7 +10,7 @@ export default function DuaCard({
   const { i18n } = useTranslation()
   const isArabic = i18n.language === 'ar'
   return (
-    <div className="dark:bg-card rounded-xl p-5 w-full max-w-md not-dark:shadow-lg shadow-gray-300 py-2">
+    <div className="bg-card rounded-xl p-5 w-full max-w-md not-dark:shadow-lg shadow-gray-300 py-2">
       <p className="text-right text-lg font-semibold leading-relaxed mt-4">
         {arabic}
       </p>

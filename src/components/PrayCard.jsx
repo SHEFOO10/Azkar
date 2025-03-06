@@ -13,7 +13,7 @@ export default function PrayCard({ children, time, desc, afternoon = true, isAra
         </div>
         <TbClock />
       </div>
-      <span className='pray-time'>
+      <span className='pray-time' dir='ltr'>
         {time} {afternoon ? 'PM' : 'AM'}
       </span>
     </section>

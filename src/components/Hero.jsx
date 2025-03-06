@@ -15,16 +15,20 @@ const Hero = () => {
 
       <div className="mt-6 flex justify-center gap-4">
         <button className="bg-primary-dark dark:bg-primary-light text-white px-4 sm:px-6 py-2 rounded-lg sm:text-lg font-medium hover:bg-green-700 transition">
-          {t('get_started')}
+          <a href='#daily-azkar'>
+            {t('get_started')}
+          </a>
         </button>
         <button className="bg-[#D1FAE5] text-primary-dark px-4 sm:px-6 py-2 rounded-lg sm:text-lg font-medium hover:bg-green-100 transition">
-          {t('navbar.prayer_times')}
+          <a href='#prayer-times'>
+            {t('navbar.prayer_times')}
+          </a>
         </button>
       </div>
 
       <div className="mt-12 grid gap-8 md:grid-cols-3">
         {t('hero_section.cards', { returnObjects: true })
-          .map((e, i) => <HeroBox key={i} head={e.title} body={e.description} btm={t(e.btm)} isArabic={i18n.language === 'ar'} />
+          .map((e, i) => <HeroBox key={i} head={e.title} body={e.description} btm={t(e.btm)} href={e.id} isArabic={i18n.language === 'ar'} />
           )}
       </div>
     </section>

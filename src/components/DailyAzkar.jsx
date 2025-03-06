@@ -54,7 +54,7 @@ const DailyAzkar = () => {
   const azkar = t('daily_azkar', { returnObjects: true })
   const isArabic = i18n.language === 'ar'
   return (
-    <div className="min-h-screen py-10">
+    <div className="min-h-screen py-10" id='daily-azkar'>
       <h1 className="text-3xl text-center font-semibold">
         {azkar.title}
       </h1>

@@ -24,17 +24,20 @@
         {
           "title": "Daily Prayers",
           "description": "Find prayer times and guidance for your location",
-          "btm": "read_more"
+          "btm": "read_more",
+          "id": "#prayer-times"
         },
         {
           "title": "Morning Azkar",
           "description": "Start your day with blessed morning remembrance",
-          "btm": "view_times"
+          "btm": "view_times",
+          "id": "#daily-azkar"
         },
         {
           "title": "Evening Azkar",
           "description": "End your day with peaceful evening remembrance",
-          "btm": "read_more"
+          "btm": "read_more",
+          "id": "#daily-azkar"
         }
       ]
     },
@@ -168,6 +171,7 @@
     },
     "prayer_guides": {
       "title": "Prayer Guide",
+      "key_points": "Key Points",
       "guides": [
         {
           "title": "1. Purification (Wudu)",

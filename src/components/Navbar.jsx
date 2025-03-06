@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from "react";
+import React, { useLayoutEffect } from "react";
 import { FiSearch } from "react-icons/fi";
 import { MdOutlineNightlight } from "react-icons/md";
 import { IoMenu } from "react-icons/io5";
@@ -11,19 +11,9 @@ const navs = [
   { name: "navbar.prayer_guide", id: 'prayer-guide' },
   { name: "navbar.calendar", id: 'islamic-calendar' },
 ];
-const Navbar = () => {
+
+const Navbar = ({ changeTheme }) => {
   const { t } = useTranslation()
-  useLayoutEffect(() => {
-    const html = document.documentElement
-    html.classList.toggle(
-      'dark',
-      localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches),
-    )
-  }, [])
-  const changeTheme = () => {
-    const html = document.documentElement
-    html.classList.toggle('dark')
-  }
   return (
     <nav className="flex items-center justify-around p-5">
       <div className="text-primary-dark dark:text-primary-light font-bold text-lg">{t('navbar.title')}</div>
@@ -47,7 +37,7 @@ const Navbar = () => {
           <FiSearch className="text-xl cursor-pointer text-[#4B5563] dark:text-gray-300" />
         </li>
         <li>
-          <MdOutlineNightlight className="text-xl cursor-pointer text-[#4B5563] dark:text-gray-300" onClick={changeTheme} />
+          <MdOutlineNightlight className="text-xl cursor-pointer text-[#4B5563] dark:text-gray-300" onClick={() => changeTheme(e => e === 'dark' ? 'light' : 'dark')} />
         </li>
       </ul>
     </nav>
