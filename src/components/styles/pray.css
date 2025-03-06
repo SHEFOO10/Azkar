@@ -6,7 +6,11 @@
   }
 
   .pray-container {
-    @apply flex flex-row-reverse w-full items-center justify-between;
+    @apply flex flex-row w-full items-center justify-between;
+  }
+
+  .pray-arabic {
+    @apply flex-row-reverse
   }
 
   .pray-details {

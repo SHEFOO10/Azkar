@@ -1,9 +1,9 @@
 import React from "react";
-import { FaArrowRight } from "react-icons/fa6";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
-const HeroBox = ({ head, body, btm }) => {
+const HeroBox = ({ head, body, btm, isArabic }) => {
   return (
-    <div className="not-dark:shadow-lg shadow-gray-300 dark:bg-card rounded-xl p-6 text-left flex flex-col justify-between">
+    <div className={`not-dark:shadow-lg shadow-gray-300 dark:bg-card rounded-xl p-6 ${isArabic ? 'text-right' : 'text-left'} flex flex-col justify-between`}>
       <h3 className="text-xl font-semibold">{head}</h3>
       <p className="text-gray-600 dark:text-gray-300 mt-2">{body}</p>
       <a
@@ -12,7 +12,11 @@ const HeroBox = ({ head, body, btm }) => {
       >
         <span>{btm}</span>
         <span>
-          <FaArrowRight />
+          {
+            isArabic
+              ? <FaArrowLeft />
+              : <FaArrowRight />
+          }
         </span>
       </a>
     </div>

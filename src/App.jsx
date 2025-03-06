@@ -12,7 +12,7 @@ function App() {
     <div style={{
       background: "url('/pattern.jpg') var(--bg-color)",
       backgroundBlendMode: "multiply",
-      }}>
+    }}>
       <Navbar />
       <Hero />
       <PrayerTimes />

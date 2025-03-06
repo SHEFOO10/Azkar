@@ -1,15 +1,22 @@
 {
   "translation": {
+    "get_started": "Get Started",
     "navbar": {
       "title": "IslamicPrayers",
+      "prayer_times": "Prayer Times",
       "azkar": "Azkar",
       "duas": "Duas",
       "prayer_guide": "Prayer Guide",
-      "calendar": "Calendar",
+      "calendar": "Calendar"
     },
-    "get_started": "Get Started",
-    "prayer_times_title": "Prayer Times",
-
+    "daily_azkar":{
+      "title": "Daily Azkar",
+      "morning": "Morning Azkar",
+      "evening": "Evening Azkar",
+      "repeat": "Repeat",
+      "time": "time",
+      "times": "times"
+    },
     "hero_section": {
       "title": "Begin Your Spiritual Journey",
       "description": "Discover daily prayers, Azkar, and spiritual guidance from the Quran and Sunnah",
@@ -17,20 +24,134 @@
         {
           "title": "Daily Prayers",
           "description": "Find prayer times and guidance for your location",
+          "btm": "read_more"
         },
         {
           "title": "Morning Azkar",
           "description": "Start your day with blessed morning remembrance",
+          "btm": "view_times"
         },
         {
           "title": "Evening Azkar",
           "description": "End your day with peaceful evening remembrance",
-        },
-      ],
-    }
+          "btm": "read_more"
+        }
+      ]
+    },
     "read_more": "Read More",
     "view_times": "View Times",
 
+    "country": "Egypt",
+    "governorates": [
+      {
+        "name": "Alexandria",
+        "api": "Alexandria"
+      },
+      {
+        "name": "Ismailia",
+        "api": "Ismailia"
+      },
+      {
+        "name": "Aswan",
+        "api": "Aswan"
+      },
+      {
+        "name": "Assiut",
+        "api": "Assiut"
+      },
+      {
+        "name": "Luxor",
+        "api": "Luxor"
+      },
+      {
+        "name": "Beheira",
+        "api": "Beheira"
+      },
+      {
+        "name": "Beni Suez",
+        "api": "Beni Suez"
+      },
+      {
+        "name": "Cairo",
+        "api": "Cairo"
+      },
+      {
+        "name": "Dakahlia",
+        "api": "Dakahlia"
+      },
+      {
+        "name": "Damietta",
+        "api": "Damietta"
+      },
+      {
+        "name": "Fayoum",
+        "api": "Fayoum"
+      },
+      {
+        "name": "Gharbia",
+        "api": "Gharbia"
+      },
+      {
+        "name": "Giza",
+        "api": "Giza"
+      },
+      {
+        "name": "South Sinai",
+        "api": "South Sinai"
+      },
+      {
+        "name": "Kafr El Sheikh",
+        "api": "Kafr El Sheikh"
+      },
+      {
+        "name": "Matrouh",
+        "api": "Matrouh"
+      },
+      {
+        "name": "Menoufia",
+        "api": "Menoufia"
+      },
+      {
+        "name": "Minya",
+        "api": "Minya"
+      },
+      {
+        "name": "New Valley",
+        "api": "New Valley"
+      },
+      {
+        "name": "North Sinai",
+        "api": "North Sinai"
+      },
+      {
+        "name": "Port Said",
+        "api": "Port Said"
+      },
+      {
+        "name": "Qalyubia",
+        "api": "Qalyubia"
+      },
+      {
+        "name": "Qena",
+        "api": "Qena"
+      },
+      {
+        "name": "Red Sea",
+        "api": "Red Sea"
+      },
+      {
+        "name": "Sharqia",
+        "api": "Sharqia"
+      },
+      {
+        "name": "Sohag",
+        "api": "Sohag"
+      },
+      {
+        "name": "Suez",
+        "api": "Suez"
+      }
+    ],
     "prayer_times": {
       "fajr_pray": "Fajr",
       "sunrise_pray": "Sunrise",
@@ -38,27 +159,31 @@
       "asr_pray": "Asr",
       "maghrib_pray": "Maghrib",
       "isha_pray": "Isha",
-    }
-
-
+      "daily_pray": "Daily Pray"
+    },
+    "duas": {
+      "title": "Quranic & Prophetic Duas",
+      "quranic": "Quranic Duas",
+      "prophetic": " Prophetic Duas"
+    },
     "prayer_guides": {
       "title": "Prayer Guide",
       "guides": [
         {
           "title": "1. Purification (Wudu)",
-          "about": "Before you pray, it’s important to be in a state of physical and spiritual purity. This means doing wudu, or ablution. It involves washing your hands, mouth, nose, face, arms, head, and feet in a specific order. It’s a refreshing way to prepare yourself for prayer.",
+          "about": "Before you pray, it’s important to be in a state of physical and spiritual purity. This means doing wudu, or ablution. It involves washing your hands, mouth, nose, face, arms, head, and feet in a specific order. It’s a refreshing way to prepare yourself for prayer."
         },
         {
           "title": "2. Intention (Niyyah)",
-          "about": "Think about your intention in your heart. You don’t need to say it out loud, but remind yourself that you are praying for Allah’s sake. This simple act of setting your intention can enhance your focus during the prayer.",
+          "about": "Think about your intention in your heart. You don’t need to say it out loud, but remind yourself that you are praying for Allah’s sake. This simple act of setting your intention can enhance your focus during the prayer."
         },
         {
           "title": "3. Choose a Clean Space",
-          "about": "Find a clean and quiet place to pray where you won’t be distracted. This could be a designated prayer area in your home, a quiet room, or even a corner of your office.",
+          "about": "Find a clean and quiet place to pray where you won’t be distracted. This could be a designated prayer area in your home, a quiet room, or even a corner of your office."
         },
         {
           "title": "4. Dress Modestly",
-          "about": "Wear clean and modest clothing. For men, this means covering from the navel to the knees. Women should wear loose-fitting clothes that cover their bodies.",
+          "about": "Wear clean and modest clothing. For men, this means covering from the navel to the knees. Women should wear loose-fitting clothes that cover their bodies."
         },
         {
           "title": "5. Step-by-Step Guide to Performing Solat",
@@ -109,7 +234,7 @@
         },
         {
           "title": "5.4. Recite Another Surah or Verses from the Quran",
-          "about": "",
+          "about": ""
         },
         {
           "title": "5.5. Perform the Ruku (Bowing)",
@@ -200,7 +325,7 @@
               "step": "Sit for the Tashahhud (testimony) and recite:",
               "description": [
                 "At-tahiyyatu lillahi was-salawatu wat-tayyibat. As-salamu ‘alayka ayyuhan-nabi, wa rahmatullahi wa barakatuh. As-salamu ‘alayna wa ‘ala ibadillahis-salihin. Ashhadu an la ilaha illa Allah, wa ashhadu anna Muhammadur Rasoolullah.",
-                "Meaning: (All greetings, prayers, and good things are for Allah. Peace be upon you, O Prophet, and the mercy of Allah and His blessings. Peace be upon us and upon the righteous servants of Allah. I bear witness that there is no deity except Allah, and I bear witness that Muhammad is the Messenger of Allah.)",
+                "Meaning: (All greetings, prayers, and good things are for Allah. Peace be upon you, O Prophet, and the mercy of Allah and His blessings. Peace be upon us and upon the righteous servants of Allah. I bear witness that there is no deity except Allah, and I bear witness that Muhammad is the Messenger of Allah.)"
               ]
             },
             {
@@ -213,7 +338,7 @@
             }
           ]
         }
-      ],
+      ]
     },
     "islamic_calendar": {
       "title": "Islamic Calendar",
@@ -223,33 +348,39 @@
           "title": "Beginning of Ramadan",
           "description": "The holy month of fasting begins",
           "event": "The blessed month of fasting, increased worship, and spiritual reflection",
+          "date": "1 Ramadan"
         },
         {
           "title": "Laylat al-Qadr",
-          "description": "The Night of Power",
-          "event": "The night better than a thousand months, when the Quran was revealed",
+          "description": "A special night that is repeated every Hijri year in the month of Ramadan",
+          "event": "Laylat al-Qadr is the night on which livelihoods are determined ",
+          "date": "21 Ramadan"
         },
         {
           "title": "Eid al-Fitr",
           "description": "Festival of Breaking the Fast",
           "event": "Celebration marking the end of Ramadan and fasting",
+          "date": "1 Shawwal"
         },
         {
           "title-adha": "Eid al-Adha",
           "description": "Festival of Sacrifice",
           "event": "Commemorating Prophet Ibrahim’s willingness to sacrifice his son",
+          "date": "10 Dhul-Hijjah"
         },
         {
           "title": "Islamic New Year",
           "description": "Beginning of the Hijri Calendar",
           "event": "Marks the migration of Prophet Muhammad (Peace been upon him) from Makkah to Madinah",
+          "date": "1 Muharram"
         },
         {
           "title": "Mawlid al-Nabi",
           "description": "Birth of Prophet Muhammad (Peace been upon him)",
-          "event": "Commemorating the birth of the final Prophet (Peace been upon him)"
+          "event": "Commemorating the birth of the final Prophet (Peace been upon him)",
+          "date": "12 Rabi al-Awwal"
         }
-      ],
-    },
+      ]
+    }
   }
 }

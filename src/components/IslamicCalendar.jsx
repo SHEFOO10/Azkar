@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import IslamicCalendarCard from "./IslamicCalendarCard";
 
 const Calendar = [
@@ -44,20 +45,23 @@ const Calendar = [
 ];
 
 const IslamicCalendar = () => {
+  const { t, i18n } = useTranslation()
+  const isArabic = i18n.language === 'ar'
+  const content = t('islamic_calendar', { returnObjects: true })
   return (
-    <div className="min-h-screen py-10 flex flex-col items-center">
-      <h1 className="text-3xl font-semibold not-dark:text-gray-900">Islamic Calendar</h1>
-      <p className="text-gray-600 text-lg mb-6">
-        Important Islamic dates and events
+    <div className="min-h-screen py-10 flex flex-col items-center" dir={isArabic ? "rtl" : "ltr"}>
+      <h1 className="text-3xl font-semibold not-dark:text-gray-900">{content.title}</h1>
+      <p className="dark:text-gray-400 text-gray-600 text-lg mb-6">
+        {content.description}
       </p>
       <div className="space-y-4 w-full max-w-2xl p-5">
-        {Calendar.map((event, index) => (
+        {content.events.map((event, index) => (
           <IslamicCalendarCard
             key={index}
             title={event.title}
             description={event.description}
             date={event.date}
-            highlight={event.highlight}
+            highlight={event.event}
           />
         ))}
       </div>

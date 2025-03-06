@@ -2,32 +2,42 @@ import React, { useLayoutEffect, useState } from "react";
 import { FiSearch } from "react-icons/fi";
 import { MdOutlineNightlight } from "react-icons/md";
 import { IoMenu } from "react-icons/io5";
+import { useTranslation } from "react-i18next";
 
-const navs = ["Prayer Times", "Azkar", "Duas", "Prayer Guide", "Calendar"];
-
+const navs = [
+  { name: "navbar.prayer_times", id: 'prayer-times' },
+  { name: "navbar.azkar", id: 'daily-azkar' },
+  { name: "navbar.duas", id: 'duas' },
+  { name: "navbar.prayer_guide", id: 'prayer-guide' },
+  { name: "navbar.calendar", id: 'islamic-calendar' },
+];
 const Navbar = () => {
-  const [theme, setTheme] = useState("")
+  const { t } = useTranslation()
   useLayoutEffect(() => {
     const html = document.documentElement
     html.classList.toggle(
       'dark',
       localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches),
     )
-  }, [theme])
+  }, [])
   const changeTheme = () => {
     const html = document.documentElement
     html.classList.toggle('dark')
   }
   return (
     <nav className="flex items-center justify-around p-5">
-      <div className="text-primary-dark dark:text-primary-light font-bold text-lg">IslamicPrayers</div>
+      <div className="text-primary-dark dark:text-primary-light font-bold text-lg">{t('navbar.title')}</div>
       <ul className="gap-6 flex text-gray-700">
-        {navs.map((nav, index) => (
+        {navs.map(({ name, id }, index) => (
           <li
             key={index}
             className="cursor-pointer hidden md:block text-[#4B5563] dark:text-gray-300 font-semibold"
           >
-            {nav}
+            <a
+              href={`#${id}`}
+            >
+              {t(name)}
+            </a>
           </li>
         ))}
         <li>
