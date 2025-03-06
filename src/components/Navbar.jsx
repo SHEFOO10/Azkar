@@ -1,4 +1,3 @@
-import React, { useLayoutEffect } from "react";
 import { FiSearch } from "react-icons/fi";
 import { MdOutlineNightlight } from "react-icons/md";
 import { IoMenu } from "react-icons/io5";

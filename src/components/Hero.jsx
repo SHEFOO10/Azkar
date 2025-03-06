@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import HeroBox from "./HeroBox";
 import { useTranslation } from 'react-i18next'
 

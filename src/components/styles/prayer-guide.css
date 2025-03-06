@@ -46,7 +46,7 @@
 
   /* Guide Tutorial */
   .guide-tutorial {
-    @apply w-full sm:min-w-2/3 sm:w-fit flex flex-col gap-4 bg-[#ECFDF5] dark:bg-transparent dark:border dark:border-primary-light rounded-lg p-4 text-base;
+    @apply w-fit sm:max-w-7/8 sm:w-fit flex flex-col gap-4 bg-[#ECFDF5] dark:bg-transparent dark:border dark:border-primary-light rounded-lg p-4 pe-8 text-base;
 
     .keypoints {
       @apply text-primary-dark dark:text-primary-light brightness-75 dark:brightness-120;
