@@ -2,10 +2,18 @@
 
 
 @layer utilities {
+  #prayer-guide {
+    @apply flex flex-col items-center gap-8 pt-8
+  }
+
+  /* Guide Container */
+  .guide-container {
+    @apply w-full flex flex-col justify-center items-center gap-8
+  }
 
   /* Guide Section */
   .guide-section {
-    @apply w-7/8 flex flex-col p-6 dark:bg-card shadow-sm shadow-gray-200 dark:shadow-gray-800 rounded-lg font-[Noto_Sans]
+    @apply w-7/8 flex flex-col p-6 bg-card shadow-sm shadow-gray-200 dark:shadow-gray-800 rounded-lg font-[Noto_Sans]
   }
 
   /* Guide Section header */
@@ -15,6 +23,10 @@
 
   .guide-header svg {
     @apply size-5 text-primary-dark dark:text-primary-light
+  }
+
+  .guide-empty {
+    @apply mb-0
   }
 
   /* Guide Section header title */
@@ -34,7 +46,7 @@
 
   /* Guide Tutorial */
   .guide-tutorial {
-    @apply w-full sm:max-w-2/3 flex flex-col gap-4 bg-[#ECFDF5] dark:bg-transparent dark:border dark:border-primary-light rounded-lg p-4;
+    @apply w-fit sm:max-w-7/8 sm:w-fit flex flex-col gap-4 bg-[#ECFDF5] dark:bg-transparent dark:border dark:border-primary-light rounded-lg p-4 pe-8 text-base;
 
     .keypoints {
       @apply text-primary-dark dark:text-primary-light brightness-75 dark:brightness-120;
@@ -47,14 +59,26 @@
 
   /* Guide Tutorial item */
   .tutorial-item {
-    @apply flex items-center gap-2 relative text-primary-dark dark:brightness-125 text-sm font-medium;
+    @apply flex items-center gap-2 relative text-primary-dark dark:brightness-125 font-medium;
+
+    svg {
+      @apply size-4 shrink-0
+    }
+  }
+
+  .item-points {
+    @apply flex-col items-start
+  }
+
+  .item-head {
+    @apply flex gap-2 items-center;
 
     svg {
       @apply size-4
     }
   }
 
-  .tutorial-point {
-    @apply absolute size-1 rounded-4xl -left-[19px] dark:-left-[21px] bg-primary-dark dark:bg-primary-light brightness-125
+  .item-sub {
+    @apply flex flex-col items-start ml-6
   }
 }

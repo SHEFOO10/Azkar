@@ -2,6 +2,7 @@ import React from "react";
 import DailyAzkarSection from "./DailyAzkarSection";
 import { IoSunnyOutline } from "react-icons/io5";
 import { MdOutlineNightlight } from "react-icons/md";
+import { useTranslation } from "react-i18next";
 
 const morning_azkar = [
   {
@@ -49,25 +50,30 @@ const evening_azkar = [
 ];
 
 const DailyAzkar = () => {
+  const { t, i18n } = useTranslation()
+  const azkar = t('daily_azkar', { returnObjects: true })
+  const isArabic = i18n.language === 'ar'
   return (
-    <div className="min-h-screen py-10">
-      <h1 className="text-3xl text-center font-semibold text-gray-900">
-        Daily Azkar
+    <div className="min-h-screen py-10" id='daily-azkar'>
+      <h1 className="text-3xl text-center font-semibold">
+        {azkar.title}
       </h1>
       <div className="flex flex-wrap justify-center gap-6 p-6">
         <DailyAzkarSection
-          title="Morning Azkar"
+          title={azkar.morning}
           icon={<IoSunnyOutline />}
           colorOne="#10B981"
           colorTwo="#0D9488"
           azkar={morning_azkar}
+          isArabic={isArabic}
         />
         <DailyAzkarSection
-          title="Evening Azkar"
+          title={azkar.evening}
           icon={<MdOutlineNightlight />}
           colorOne="#6366F1"
           colorTwo="#9333EA"
           azkar={evening_azkar}
+          isArabic={isArabic}
         />
       </div>
     </div>

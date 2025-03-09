@@ -1,7 +1,7 @@
 import DuaCard from "./DuaCard";
 import { FaBook, FaHands } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa6";
-import Verse from "./Verse";
+import { useTranslation } from "react-i18next";
 
 const quranicDuas = [
   {
@@ -9,7 +9,10 @@ const quranicDuas = [
     arabic: "رَبَّنَا تَقَبَّلْ مِنَّا ۖ إِنَّكَ أَنتَ السَّمِيعُ الْعَلِيمُ",
     translation:
       "Our Lord, accept [this] from us. Indeed, You are the Hearing, the Knowing.",
-    reference: "Surah Al-Baqarah: 127",
+    reference: {
+      en: "Surah Al-Baqarah: 127",
+      ar: "سورة البقرة: 127"
+    }
   },
   {
     id: 2,
@@ -17,7 +20,10 @@ const quranicDuas = [
       "رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِن ذُرِّيَّتِي ۚ رَبَّنَا وَتَقَبَّلْ دُعَاءِ",
     translation:
       "My Lord, make me an establisher of prayer, and from my descendants. Our Lord, and accept my supplication.",
-    reference: "Surah Ibrahim: 40",
+    reference: {
+      en: "Surah Ibrahim: 40",
+      ar: "سورة إبراهيم: 40"
+    }
   },
   {
     id: 3,
@@ -25,7 +31,10 @@ const quranicDuas = [
       "رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الْحِسَابُ",
     translation:
       "Our Lord, forgive me and my parents and the believers the Day the account is established.",
-    reference: "Surah Ibrahim: 41",
+    reference: {
+      en: "Surah Ibrahim: 41",
+      ar: "سورة إبراهيم: 41"
+    }
   },
 ];
 
@@ -36,7 +45,10 @@ const propheticDuas = [
       "اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا، وَرِزْقًا طَيِّبًا، وَعَمَلًا مُتَقَبَّلًا",
     translation:
       "O Allah, I ask You for beneficial knowledge, good provision, and acceptable deeds.",
-    reference: "Ibn Majah",
+    reference: {
+      en: "Ibn Majah",
+      ar: "ابن ماجه"
+    }
   },
   {
     id: 2,
@@ -44,7 +56,10 @@ const propheticDuas = [
       "اللَّهُمَّ أَحْسِنْ عَاقِبَتَنَا فِي الأُمُورِ كُلِّهَا، وَأَجِرْنَا مِنْ خِزْيِ الدُّنْيَا وَعَذَابِ الآخِرَةِ",
     translation:
       "O Allah, make good our end in all matters, and save us from humiliation in this world and the punishment of the Hereafter.",
-    reference: "Ahmad",
+    reference: {
+      en: "Ahmad",
+      ar: "أحمد"
+    }
   },
   {
     id: 3,
@@ -52,20 +67,26 @@ const propheticDuas = [
       "اللَّهُمَّ اكْفِنِي بِحَلَالِكَ عَنْ حَرَامِكَ وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ",
     translation:
       "O Allah, suffice me with what You have allowed instead of what You have forbidden, and make me independent of all others besides You.",
-    reference: "Tirmidhi",
+    reference: {
+      en: "Tirmidhi",
+      ar: "الترمذي"
+    }
   },
 ];
 
 export { quranicDuas, propheticDuas };
 
 const Duas = () => {
+  const { t, i18n } = useTranslation()
+  const isArabic = i18n.language === 'ar' ? 'rtl' : 'ltr'
+  const content = t('duas', { returnObjects: true })
   return (
-    <section className="py-16 px-5 container mx-auto max-w-7xl">
+    <section className="py-16 px-5 container mx-auto max-w-7xl" id='duas' dir={isArabic}>
       <h2 className="text-3xl font-bold text-center flex justify-center items-center gap-2">
         <span className="text-primary-dark dark:text-primary-light hidden md:block">
           <FaHands />
         </span>
-        Quranic & Prophetic Duas
+        {content.title}
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 m-[50px] max-w-5xl mx-auto">
@@ -74,7 +95,7 @@ const Duas = () => {
             <span className="text-primary-dark dark:text-primary-light">
               <FaBook />
             </span>{" "}
-            Quranic Duas
+            {content.quranic}
           </h3>
           <div className="flex flex-col gap-6 items-center">
             {quranicDuas.map((dua) => (
@@ -88,7 +109,7 @@ const Duas = () => {
             <span className="text-primary-dark dark:text-primary-light">
               <FaRegHeart />
             </span>{" "}
-            Prophetic Duas
+            {content.prophetic}
           </h3>
           <div className="flex flex-col gap-6 items-center">
             {propheticDuas.map((dua) => (
