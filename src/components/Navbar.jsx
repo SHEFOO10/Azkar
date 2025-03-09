@@ -15,7 +15,7 @@ const Navbar = ({ changeTheme }) => {
   const { t } = useTranslation()
   return (
     <nav className="flex items-center justify-around p-5">
-      <div className="text-primary-dark dark:text-primary-light font-bold text-lg">{t('navbar.title')}</div>
+      <div className="flex  items-center text-primary-dark dark:text-primary-light font-bold text-lg"><img width={64} height={64} src="/ITCLUB.png" /> {t('navbar.title')}</div>
       <ul className="gap-6 flex text-gray-700">
         {navs.map(({ name, id }, index) => (
           <li
@@ -32,9 +32,9 @@ const Navbar = ({ changeTheme }) => {
         <li>
           <IoMenu className="text-xl cursor-pointer text-[#4B5563] dark:text-gray-300 block md:hidden" />
         </li>
-        <li>
+        {/* <li>
           <FiSearch className="text-xl cursor-pointer text-[#4B5563] dark:text-gray-300" />
-        </li>
+        </li> */}
         <li>
           <MdOutlineNightlight className="text-xl cursor-pointer text-[#4B5563] dark:text-gray-300" onClick={() => changeTheme(e => e === 'dark' ? 'light' : 'dark')} />
         </li>
