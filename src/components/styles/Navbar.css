@@ -1,0 +1,29 @@
+@keyframes dropDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px) scaleY(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+  }
+}
+
+@keyframes dropUp {
+  from {
+    opacity: 1;
+    transform: translateY(0) scaleY(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-50px) scaleY(0.8);
+  }
+}
+
+.menu-enter {
+  animation: dropDown 0.4s ease-out forwards;
+}
+
+.menu-exit {
+  animation: dropUp 0.3s ease-in forwards;
+}
