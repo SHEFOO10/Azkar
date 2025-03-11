@@ -365,7 +365,7 @@ const Duas = () => {
             </span>{" "}
             {content.quranic}
           </h3>
-          <div style={{direction: 'ltr'}} className="flex flex-col gap-6 items-center h-[540px] overflow-y-auto">
+          <div style={{direction: 'ltr', paddingInline: "20px"}} className="flex flex-col gap-6 items-center h-[540px] overflow-y-auto">
             {quranicDuas.map((dua) => (
               <DuaCard key={dua.id} {...dua} isQuran={true} />
             ))}
@@ -379,7 +379,7 @@ const Duas = () => {
             </span>{" "}
             {content.prophetic}
           </h3>
-          <div style={{direction: 'ltr'}} className="h-[540px] flex flex-col gap-6 items-center overflow-y-auto">
+          <div style={{direction: 'ltr', paddingInline: "20px"}} className="h-[540px] flex flex-col gap-6 items-center overflow-y-auto sm:pr-4">
             {propheticDuas.map((dua) => (
               <DuaCard key={dua.id} {...dua} isQuran={false} />
             ))}
