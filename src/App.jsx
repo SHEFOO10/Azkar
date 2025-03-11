@@ -25,7 +25,7 @@ function App() {
       background: "url('/pattern.jpg') var(--bg-color)",
       backgroundBlendMode: theme === 'dark' ? "multiply" : "overlay",
     }}>
-      <Navbar changeTheme={setTheme} />
+      <Navbar changeTheme={setTheme} theme={theme} />
       <Hero />
       <PrayerTimes />
       <DailyAzkar />

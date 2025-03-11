@@ -1,7 +1,7 @@
 import "./styles/Navbar.css";
 import { useState } from "react";
 import { FiSearch } from "react-icons/fi";
-import { MdOutlineNightlight } from "react-icons/md";
+import { MdOutlineNightlight, MdOutlineWbSunny } from "react-icons/md";
 import { IoMenu } from "react-icons/io5";
 import { useTranslation } from "react-i18next";
 
@@ -13,7 +13,7 @@ const navs = [
   { name: "navbar.calendar", id: "islamic-calendar" },
 ];
 
-const Navbar = ({ changeTheme }) => {
+const Navbar = ({ changeTheme, theme }) => {
   const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
@@ -38,13 +38,11 @@ const Navbar = ({ changeTheme }) => {
           {/* <li>
           <FiSearch className="text-xl cursor-pointer text-[#4B5563] dark:text-gray-300" />
         </li> */}
-          <li>
-            <MdOutlineNightlight
+          <li onClick={() =>
+                changeTheme((e) => (e === "dark" ? "light" : "dark"))}>
+            { theme === 'dark' ? <MdOutlineNightlight
               className="text-xl cursor-pointer text-[#4B5563] dark:text-gray-300"
-              onClick={() =>
-                changeTheme((e) => (e === "dark" ? "light" : "dark"))
-              }
-            />
+              /> : <MdOutlineWbSunny className="text-xl cursor-pointer text-[#4B5563] dark:text-gray-300" />}
           </li>
         </ul>
       </nav>
