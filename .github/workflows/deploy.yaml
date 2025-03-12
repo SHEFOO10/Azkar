@@ -1,0 +1,30 @@
+name: Deploy on Push
+
+# Trigger the workflow when pushing to the main branch
+on:
+  push:
+    branches:
+      - prePROD
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout your repository on main branch
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22' # or whichever Node version you need
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Run your deploy script
+      - name: Deploy to GitHub Pages
+        run: npm run deploy
