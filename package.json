@@ -6,7 +6,7 @@
 
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist --cname=azkar.itechclub.top",
+    "deploy": "gh-pages -d dist --cname=azkar.itechclub.top -u 'github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>'",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",

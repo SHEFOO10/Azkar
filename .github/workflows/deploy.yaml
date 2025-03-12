@@ -27,4 +27,6 @@ jobs:
 
       # Run your deploy script
       - name: Deploy to GitHub Pages
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run deploy
