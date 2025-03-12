@@ -1,6 +1,5 @@
 name: Deploy on Push
 
-# Trigger the workflow when pushing to the main branch
 on:
   push:
     branches:
@@ -11,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout your repository on main branch
+      # Checkout your repository on the prePROD branch
       - name: Checkout repository
         uses: actions/checkout@v3
 
@@ -25,14 +24,22 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      # Configure Git User
       - name: Configure Git User
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+      # Update remote URL to include the token
+      - name: Update Remote URL
+        run: |
+          git remote set-url origin https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
 
       # Run your deploy script
       - name: Deploy to GitHub Pages
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run deploy
+      
+      - name: Debug Remote URL
+        run: git remote -v
