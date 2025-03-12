@@ -35,11 +35,12 @@ jobs:
         run: |
           git remote set-url origin https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
 
+      - name: Debug Remote URL
+        run: git remote -v
+
       # Run your deploy script
       - name: Deploy to GitHub Pages
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run deploy
       
-      - name: Debug Remote URL
-        run: git remote -v
