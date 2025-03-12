@@ -36,14 +36,14 @@ jobs:
         run: |
           git remote set-url origin https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
 
-      - name: Debug Remote URL
-        run: git remote -v
-
       # Run your deploy script
+      - name: Build and Deploy
+        run: npm run predeploy
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist      # Or dist, out, etc.
+          cname: azkar.itechclub.top
       
