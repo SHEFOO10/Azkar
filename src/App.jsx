@@ -6,6 +6,7 @@ import PrayerGuide from "./components/PrayerGuide.jsx";
 import DailyAzkar from "./components/DailyAzkar";
 import IslamicCalendar from "./components/IslamicCalendar.jsx";
 import { useEffect, useLayoutEffect, useState } from "react";
+import IslamicSection from "./components/IslamicSection.jsx";
 
 function App() {
   const [theme, setTheme] = useState('dark')
@@ -28,6 +29,7 @@ function App() {
       <Navbar changeTheme={setTheme} theme={theme} />
       <Hero />
       <PrayerTimes />
+      {/* <IslamicSection /> */}
       <DailyAzkar />
       <Duas />
       <PrayerGuide />

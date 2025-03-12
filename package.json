@@ -3,11 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://SHEFOO10.github.io/Azkar",
 
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist --cname=azkar.itechclub.top",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",

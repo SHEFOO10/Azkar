@@ -64,7 +64,7 @@ const DailyAzkarSection = ({
           {azkar.map((item, index) => (
             <div
               key={index}
-              className="cursor-pointer dark:bg-gray-700 dark:text-white p-4 rounded-xl shadow-sm transition hover:scale-105"
+              className="cursor-pointer dark:bg-gray-700 dark:text-white p-4 rounded-xl shadow-sm transition hover:scale-102"
               onClick={() => handleRepeation(index)}
             >
               <h1 className="text-right text-lg font-semibold mb-2">
