@@ -23,7 +23,7 @@ export default function DuaCard({
         ) : (
           <FaRegStar className="mr-2" />
         )}
-        <span>{isArabic ? reference.ar : reference.en}</span>
+        <span className="mb-2">{isArabic ? reference.ar : reference.en}</span>
       </div>
     </div>
   );

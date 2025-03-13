@@ -32,7 +32,7 @@
 
 @layer base {
   body {
-    @apply flex items-center justify-center bg-background text-foreground min-h-screen w-screen dark:bg-linear-to-b dark:from-gradient-dark dark:to-gradient-light;
+    @apply w-screen overflow-x-hidden flex items-center justify-center bg-background text-foreground min-h-screen w-screen dark:bg-linear-to-b dark:from-gradient-dark dark:to-gradient-light;
   }
 
   html {
@@ -48,5 +48,34 @@
 @layer utilities {
   .container {}
 
+
+}
+
+
+div::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+div::-webkit-scrollbar-track {
+  background: var(--bg-color-light);
+  border-radius: 24px;
+}
+
+/* Handle */
+div::-webkit-scrollbar-thumb {
+  background-color: var(--fg-color);
+  border: 3px solid var(--bg-color-light); /* space around thumb content */
+  background-clip: content-box;  /* makes border act as padding */
+  border-radius: 8px;
+  transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+}
+
+/* Handle on hover */
+div::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+  border: 3px solid transparent; /* space around thumb content */
 
 }
