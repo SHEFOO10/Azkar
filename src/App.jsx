@@ -29,9 +29,10 @@ function App() {
   return (
 
 
-    <div style={{
+    <div className="md:bg-contain" style={{
       background: "url('/pattern.jpg') var(--bg-color)",
       backgroundBlendMode: theme === 'dark' ? "multiply" : "overlay",
+      backgroundAttachment: "fixed",
       backgroundSize: "cover",
     }}>
       <Navbar changeTheme={setTheme} theme={theme} />
