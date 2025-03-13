@@ -11,7 +11,7 @@ const navs = [
   { name: "navbar.duas", id: "duas" },
   { name: "navbar.prayer_guide", id: "prayer-guide" },
   { name: "navbar.calendar", id: "islamic-calendar" },
-  { name: "السيره والقران", id: "videos" },
+  { name: "navbar.Seerah_Quran", id: "videos" },
 ];
 
 const Navbar = ({ changeTheme }) => {
