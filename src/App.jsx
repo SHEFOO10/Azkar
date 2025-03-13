@@ -32,6 +32,7 @@ function App() {
     <div style={{
       background: "url('/pattern.jpg') var(--bg-color)",
       backgroundBlendMode: theme === 'dark' ? "multiply" : "overlay",
+      backgroundSize: "cover",
     }}>
       <Navbar changeTheme={setTheme} theme={theme} />
 
