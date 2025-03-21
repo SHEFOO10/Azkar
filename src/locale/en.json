@@ -7,9 +7,10 @@
       "azkar": "Azkar",
       "duas": "Duas",
       "prayer_guide": "Prayer Guide",
-      "calendar": "Calendar"
+      "calendar": "Calendar",
+      "Seerah_Quran": "Seerah and Quran"
     },
-    "daily_azkar":{
+    "daily_azkar": {
       "title": "Daily Azkar",
       "morning": "Morning Azkar",
       "evening": "Evening Azkar",
@@ -20,7 +21,7 @@
     "hero_section": {
       "title": "Begin Your Spiritual Journey",
       "description": "Discover daily prayers, Azkar, and spiritual guidance from the Quran and Sunnah",
-      "cards": [ 
+      "cards": [
         {
           "title": "Daily Prayers",
           "description": "Find prayer times and guidance for your location",
@@ -207,9 +208,9 @@
           ]
         },
         {
-         "title": "5.1. Stand Facing the Qibla",
-         "about": "",
-         "steps": [
+          "title": "5.1. Stand Facing the Qibla",
+          "about": "",
+          "steps": [
             "Use compass or Qibla Finder Web App.",
             "Start positioning yourself to the Qibla."
           ]
@@ -220,11 +221,8 @@
           "steps": [
             "Raise your hands to your ears (or shoulders).",
             {
-              "step":
-                "Say the Takbeer \"Allahu Akbar\"",
-              "description": [
-                "Meaning: (Allah is the Greatest)"
-              ]
+              "step": "Say the Takbeer \"Allahu Akbar\"",
+              "description": ["Meaning: (Allah is the Greatest)"]
             }
           ]
         },
@@ -247,11 +245,8 @@
             "Bend at the waist with your hands on your knees.",
             "Keeping your back straight.",
             {
-              "step":
-                "While in this position, say this 3 times \"Subhana Rabbiyal Adheemi Wa Bihamdihi\"",
-              "description": [
-                "Meaning: (Glory is to my Lord, the Most Great)"
-              ]
+              "step": "While in this position, say this 3 times \"Subhana Rabbiyal Adheemi Wa Bihamdihi\"",
+              "description": ["Meaning: (Glory is to my Lord, the Most Great)"]
             }
           ]
         },
@@ -261,8 +256,7 @@
           "steps": [
             "Return to a standing position.",
             {
-              "step":
-                "Then say \"Sami’ Allahu liman Hamidah, Rabbana wa laka al-hamd\"",
+              "step": "Then say \"Sami’ Allahu liman Hamidah, Rabbana wa laka al-hamd\"",
               "description": [
                 "Meaning: (Allah hears the one who praises Him; Our Lord, to You belongs all praise)"
               ]
@@ -275,8 +269,7 @@
           "steps": [
             "Go down into prostration.",
             {
-              "step":
-                "Touching your forehead, nose, palms, knees, and toes to the floor",
+              "step": "Touching your forehead, nose, palms, knees, and toes to the floor",
               "description": [
                 "In this position, say \"Subhana Rabbiyal A’la Wa Bihamdihi\" 3 times",
                 "Meaning (Glory is to my Lord, the Most High)"
@@ -293,7 +286,6 @@
               "description": [
                 "\"Rabbighfir li War Hamni Wajburni War Fa’ni War Zuqni Wa Ihdini Wa ‘Aafini Wa’fu ‘Anni\"",
                 "Meaning: (O Lord, forgive me, have mercy on me, support me, elevate me, provide for me, guide me, grant me health, and pardon me)"
-
               ]
             }
           ]
@@ -305,9 +297,7 @@
             "Go back down into prostration.",
             {
               "step": "Repeat \"Subhana Rabbiyal A’la Wa Bihamdihi\" 3 times",
-              "description": [
-                "Meaning (Glory is to my Lord, the Most High)"
-              ]
+              "description": ["Meaning (Glory is to my Lord, the Most High)"]
             }
           ]
         },
@@ -333,8 +323,7 @@
               ]
             },
             {
-              "step":
-                "Turn your head to the right and then to the left, saying this in each direction",
+              "step": "Turn your head to the right and then to the left, saying this in each direction",
               "description": [
                 "\"As-salamu ‘alaykum wa rahmatullah\"",
                 "Meaning: (Peace and mercy of Allah be upon you)"
@@ -377,12 +366,6 @@
           "description": "Beginning of the Hijri Calendar",
           "event": "Marks the migration of Prophet Muhammad (Peace been upon him) from Makkah to Madinah",
           "date": "1 Muharram"
-        },
-        {
-          "title": "Mawlid al-Nabi",
-          "description": "Birth of Prophet Muhammad (Peace been upon him)",
-          "event": "Commemorating the birth of the final Prophet (Peace been upon him)",
-          "date": "12 Rabi al-Awwal"
         }
       ]
     }
