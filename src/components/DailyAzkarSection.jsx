@@ -67,7 +67,7 @@ const DailyAzkarSection = ({
               className="cursor-pointer dark:bg-gray-700 dark:text-white p-4 rounded-xl shadow-sm transition hover:scale-102"
               onClick={() => handleRepeation(index)}
             >
-              <h1 className="text-right text-lg font-semibold mb-2">
+              <h1 className="text-right text-lg font-semibold mb-2 whitespace-pre-line">
                 {item.arabic}
               </h1>
               <p className="text-sm dark:text-gray-400 mb-3" dir={"ltr"}>

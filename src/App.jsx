@@ -43,8 +43,8 @@ function App() {
       <DailyAzkar />
       <Duas />
       <PrayerGuide />
-      <IslamicCalendar />
       <Videos />
+      <IslamicCalendar />
     </div>
   );
 }
