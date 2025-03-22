@@ -19,7 +19,6 @@ const Navbar = ({ changeTheme, theme }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <>
-      {/* main nav */}
       <nav className="flex items-center justify-around p-5">
         <div className="flex items-center text-primary-dark dark:text-primary-light font-bold text-lg">
           <img width={64} height={64} src="/ITCLUB.png" /> {t("navbar.title")}
@@ -39,11 +38,16 @@ const Navbar = ({ changeTheme, theme }) => {
           {/* <li>
           <FiSearch className="text-xl cursor-pointer text-[#4B5563] dark:text-gray-300" />
         </li> */}
-          <li onClick={() =>
-                changeTheme((e) => (e === "dark" ? "light" : "dark"))}>
-            { theme === 'dark' ? <MdOutlineNightlight
-              className="text-xl cursor-pointer text-[#4B5563] dark:text-gray-300"
-              /> : <MdOutlineWbSunny className="text-xl cursor-pointer text-[#4B5563] dark:text-gray-300" />}
+          <li
+            onClick={() =>
+              changeTheme((e) => (e === "dark" ? "light" : "dark"))
+            }
+          >
+            {theme === "dark" ? (
+              <MdOutlineNightlight className="text-xl cursor-pointer text-[#4B5563] dark:text-gray-300" />
+            ) : (
+              <MdOutlineWbSunny className="text-xl cursor-pointer text-[#4B5563] dark:text-gray-300" />
+            )}
           </li>
         </ul>
       </nav>
@@ -58,6 +62,7 @@ const Navbar = ({ changeTheme, theme }) => {
             <li
               key={index}
               className="cursor-pointer my-3 text-[#4B5563] dark:text-gray-300 font-semibold transition-all duration-300 hover:translate-x-1"
+              onClick={() => setIsMenuOpen(false)}
             >
               <a href={`#${id}`}>{t(name)}</a>
             </li>
